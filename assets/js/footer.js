@@ -60,7 +60,7 @@
             '<h5>Kontak</h5>' +
             '<ul>' +
               '<li>Jl. Taman Setia Budi Indah Blok A No. 49C, Medan</li>' +
-              '<li>+62 852-6984-0834</li>' +
+              '<li>+62 812-2500-0794</li>' +
               '<li>info@ketiara.id</li>' +
             '</ul>' +
           '</div>' +
@@ -80,7 +80,7 @@
     // "Lamar via WhatsApp") dan dengan nomor yang tertulis sebagai teks di
     // pages/kontak.html & footer di atas. Nomor ini BUKAN nomor yang dipakai
     // form kontak cepat (itu ada di assets/js/script.js, cari "waForm").
-    '<a href="https://wa.me/6285269840834" class="wa-float" target="_blank" aria-label="Chat WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>' +
+    '<a href="https://wa.me/6281225000794" class="wa-float" target="_blank" aria-label="Chat WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>' +
     '<button class="back-top" aria-label="Kembali ke atas">↑</button>';
 
   document.write(html);
