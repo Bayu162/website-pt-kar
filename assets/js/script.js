@@ -206,7 +206,7 @@ if (waForm) {
     // Pastikan dengan pembimbing/atasan apakah kedua nomor ini SEHARUSNYA
     // sama atau memang berbeda tim/tujuan, lalu samakan formatnya di sini:
     // 62 (kode negara) + nomor HP tanpa angka 0 di depan, tanpa +/spasi/strip.
-    const nomor = '6282369597978'; // TODO: ganti dengan nomor WhatsApp resmi PT KAR
+    const nomor = '6281225000794'; // TODO: ganti dengan nomor WhatsApp resmi PT KAR
     const text = encodeURIComponent(`Halo PT KAR, saya ${nama}. ${pesan}`);
     window.open(`https://wa.me/${nomor}?text=${text}`, '_blank');
   });
