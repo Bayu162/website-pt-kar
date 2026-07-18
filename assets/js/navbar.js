@@ -37,7 +37,6 @@
           '<li><a href="' + base + 'pages/ekosistem.html"' + cls('ekosistem') + '>Ekosistem</a></li>' +
           '<li><a href="' + base + 'pages/capaian.html"' + cls('capaian') + '>Capaian</a></li>' +
           '<li><a href="' + base + 'pages/mitra.html"' + cls('mitra') + '>Mitra</a></li>' +
-          '<li><a href="' + base + 'pages/legalitas.html"' + cls('legalitas') + '>Legalitas</a></li>' +
           '<li><a href="' + base + 'pages/berita/index.html"' + cls('berita') + '>Berita</a></li>' +
           '<li><a href="' + base + 'pages/karier.html"' + cls('karier') + '>Karier</a></li>' +
           '<li><a href="' + base + 'pages/kontak.html"' + cls('kontak') + '>Kontak</a></li>' +
