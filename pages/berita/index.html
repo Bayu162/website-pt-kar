@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berita & Kegiatan - PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Berita dan publikasi kegiatan PT Ketiara Aliran Rezeki.">
+<link rel="icon" href="../../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Berita & Kegiatan - PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Berita dan publikasi kegiatan PT Ketiara Aliran Rezeki.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <script src="../../assets/js/navbar.js" data-active="berita"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../../index.html">Beranda</a> / Berita</div>
+    <h1>Berita & Kegiatan</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!--
+      Tombol filter kategori berita. Sama seperti filter brand di
+      ekosistem.html: data-filter harus cocok dengan data-category pada
+      kartu berita (.berita-item) di bawah.
+    -->
+    <div class="filter-bar">
+      <button class="filter-btn active filter-berita" data-filter="all">Semua</button>
+      <button class="filter-btn filter-berita" data-filter="perusahaan">Perusahaan</button>
+      <button class="filter-btn filter-berita" data-filter="kompetisi">Kompetisi</button>
+      <button class="filter-btn filter-berita" data-filter="sosial">Sosial</button>
+    </div>
+
+    <!--
+      DAFTAR KARTU BERITA (.berita-item)
+      ============================================================
+      CARA MENAMBAH ARTIKEL BERITA BARU:
+      1. Duplikat salah satu file artikel di folder ini, misalnya
+         pages/berita/kegiatan-sosial.html -> simpan sebagai file BARU
+         dengan nama singkat & tanpa spasi, contoh:
+         pages/berita/webinar-pendidikan-2026.html
+      2. Buka file barunya, ubah: judul (<title> & <h1>), tanggal,
+         kategori, isi paragraf, dan foto (src gambar di .image-frame).
+      3. Tambahkan SATU kartu baru di bawah ini (salin blok
+         <div class="card berita-item">...</div>, tempel, lalu sesuaikan:
+         - data-category   -> harus sama dgn salah satu tombol filter di atas
+         - <span class="tag"> -> kategori & tanggal yang tampil di kartu
+         - <h3> dan <p>    -> judul & ringkasan singkat artikel
+         - href            -> nama file artikel baru yang dibuat di langkah 1
+      4. Simpan. Artikel baru otomatis muncul di halaman ini.
+
+      CARA MENGHAPUS ARTIKEL BERITA:
+      1. Hapus kartu <div class="card berita-item">...</div> yang sesuai
+         di bawah ini.
+      2. Hapus juga file .html artikelnya di folder pages/berita/.
+      (Jika hanya menghapus salah satu tanpa yang lain, bisa muncul
+      tautan rusak/halaman kosong yang masih bisa diakses.)
+      ============================================================
+    -->
+    <div class="grid-3">
+      <div class="card berita-item" data-category="perusahaan">
+        <div class="card-body">
+          <span class="tag">Perusahaan · 10 Jan 2026</span>
+          <h3>Profil dan Perkembangan PT KAR</h3>
+          <p>Rangkuman perjalanan PT Ketiara Aliran Rezeki dalam membangun ekosistem pendidikan.</p>
+          <a href="profil-dan-perkembangan.html" class="card-link">Baca selengkapnya →</a>
+        </div>
+      </div>
+      <div class="card berita-item" data-category="kompetisi">
+        <div class="card-body">
+          <span class="tag">Kompetisi · 22 Feb 2026</span>
+          <h3>Kegiatan Kompetisi Akademik Nasional</h3>
+          <p>Dokumentasi penyelenggaraan kompetisi akademik yang diikuti siswa dari berbagai provinsi.</p>
+          <a href="kegiatan-kompetisi.html" class="card-link">Baca selengkapnya →</a>
+        </div>
+      </div>
+      <div class="card berita-item" data-category="sosial">
+        <div class="card-body">
+          <span class="tag">Sosial · 15 Mar 2026</span>
+          <h3>Kegiatan Sosial dan Kerja Sama Pendidikan</h3>
+          <p>PT KAR bersama yayasan mitra menjalankan program sosial di bidang pendidikan.</p>
+          <a href="kegiatan-sosial.html" class="card-link">Baca selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../../assets/js/footer.js"></script>
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>

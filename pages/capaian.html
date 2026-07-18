@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capaian - PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Milestone, statistik, dan perkembangan PT Ketiara Aliran Rezeki dalam membangun ekosistem pendidikan Indonesia.">
+<link rel="icon" href="../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Capaian - PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Milestone, statistik, dan perkembangan PT Ketiara Aliran Rezeki dalam membangun ekosistem pendidikan Indonesia.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <script src="../assets/js/navbar.js" data-active="capaian"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Beranda</a> / Capaian</div>
+    <h1>Capaian PT Ketiara Aliran Rezeki</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <span class="eyebrow">Statistik</span>
+    <h2 class="section-title">Perkembangan dalam Angka</h2>
+    <p class="section-desc">Ringkasan capaian utama PT Ketiara Aliran Rezeki berdasarkan data resmi perusahaan.</p>
+
+    <!--
+      STATISTIK — blok yang SAMA juga tampil di index.html (Beranda).
+      Jika mengubah angka di sini, ubah juga angka yang sama persis di
+      index.html supaya kedua halaman tidak menampilkan data berbeda.
+      Cara mengubah: ganti angka pada data-count="..." (hanya angka, tanpa
+      titik/koma pemisah ribuan).
+    -->
+    <div class="achieve-band">
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="682045" data-suffix="+">0</div>
+        <div class="achieve-label">Member Terdaftar</div>
+        <div class="achieve-period">Per Desember 2025</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="950000" data-suffix="+">0</div>
+        <div class="achieve-label">Pemesanan & Layanan</div>
+        <div class="achieve-period">Seluruh Indonesia</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="33" data-suffix="+">0</div>
+        <div class="achieve-label">Provinsi Tujuan Pemesanan</div>
+        <div class="achieve-period">Jangkauan Nasional</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="39000" data-suffix="+">0</div>
+        <div class="achieve-label">Peserta Lulus PTN</div>
+        <div class="achieve-period">Tahun 2026 (berjalan)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Grafik</span>
+    <h2 class="section-title">Pertumbuhan Member & Hasil Peserta</h2>
+    <p class="section-desc">Visualisasi data statis berdasarkan angka resmi pada Company Profile PT KAR.</p>
+
+    <!--
+      GRAFIK (Chart.js) — PENTING:
+      Angka grafik batang/garis di bawah ini TIDAK diambil otomatis dari
+      statistik di atas. Angkanya ditulis manual TERPISAH di dalam tag
+      <script> pada bagian bawah halaman ini (cari "var memberCtx" dan
+      "var ptnCtx"). Jadi kalau mau MENGUBAH ANGKA GRAFIK, ubah di 2 tempat:
+        1. Teks "chart-foot" di bawah tiap grafik (keterangan angka per tahun).
+        2. Data di dalam <script> Chart.js (array "data: [...]" dan
+           "labels: [...]") di bagian bawah file ini.
+      Grafik ini memuat library dari CDN (jsdelivr) sehingga BUTUH KONEKSI
+      INTERNET saat website dibuka. Jika CDN gagal dimuat, otomatis tampil
+      pesan "Grafik gagal dimuat" (lihat script di bawah, bagian
+      "typeof Chart === 'undefined'") — ini bukan bug, ini fallback normal.
+    -->
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Pertumbuhan Jumlah Member</h3>
+        <p class="chart-sub">Akumulasi member terdaftar per periode, 2022–2025</p>
+        <div class="chart-wrap"><canvas id="chartMember"></canvas></div>
+        <p class="chart-foot">2022: 144.053 member (Jan 2021–Okt 2022) &middot; 2023: 257.421 member (Sep 2022–Nov 2023) &middot; 2024: 501.311 member (per Des 2024) &middot; 2025: 682.045 member. Data 2026 masih berjalan ("Bismillah on progress").</p>
+      </div>
+      <div class="chart-card">
+        <h3>Peserta Lulus PTN</h3>
+        <p class="chart-sub">Jumlah peserta lulus Perguruan Tinggi Negeri (dalam ribuan)</p>
+        <div class="chart-wrap"><canvas id="chartPtn"></canvas></div>
+        <p class="chart-foot">2024: 66 ribu &middot; 2025: 44 ribu &middot; 2026: 39 ribu*. *Data 2026 belum genap satu tahun penuh. Dihitung dari peserta program PT KAR yang lulus PTN dan menggunakan sertifikat/piagam sebagai referensi pendaftaran.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Milestone</span>
+    <h2 class="section-title">Event Pertama di Setiap Fase</h2>
+    <p class="section-desc">Capaian jumlah peserta pada event pertama di setiap periode pertumbuhan member.</p>
+    <div class="milestone-grid">
+      <div class="milestone-card"><div class="milestone-date">JANUARI 2022</div><h4>OSPANESIA</h4><p>FIRST EVENT : <br>OSSI<br>Februari 2022<br>18k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">OKTOBER 2022</div><h4>PRESMANESIA</h4><p>FIRST EVENT : <br>OSPANESIA<br> November 2022<br>18k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">SEPTEMBER 2023</div><h4>FOSNAS</h4><p>FIRST EVENT : <br>OSPANESIA<br> November 2022<br>19k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">NOVEMBER 2023</div><h4>GEMANESIA</h4><p>FIRST EVENT : <br>OLIMNAS<br> Januari 2024<br>20k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">MEI 2023</div><h4>SENTRAL OLIMPIADE</h4><p>FIRST EVENT : <br>NSO<br> November 2024<br>2k Peserta</p></div>      
+      <div class="milestone-card"><div class="milestone-date">MEI 2024</div><h4>YASPERNAS</h4><p>FIRST EVENT : <br>OSM<br> November 2024<br>2k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">November 2024</div><h4>LEMBAGA OLIMPIADE NASIONAL</h4><p>FIRST EVENT : <br>OPSN<br> November 2024<br>1k Peserta</p></div>
+      <div class="milestone-card"><div class="milestone-date">November 2024</div><h4>MUDA SAINS NASIOANL</h4><p>FIRST EVENT : <br>NYSC<br> Desember 2024<br>1k Peserta</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <!--
+      SECTION "JANGKAUAN" — berisi 1 gambar peta/ilustrasi jangkauan
+      + 3 kartu angka. Untuk mengubah gambar, ganti src gambar di bawah
+      (upload file baru ke assets/icons/, nama huruf kecil tanpa spasi).
+      Untuk mengubah angka pada kartu, edit langsung teks di dalam <h3>
+      pada masing-masing .card di bawah (angka di sini DITULIS MANUAL,
+      bukan otomatis dari data-count, jadi harus disamakan manual dengan
+      statistik di bagian atas halaman ini bila berubah).
+    -->
+    <span class="eyebrow">Jangkauan</span>
+    <h2 class="section-title">Melayani Pemesanan Seluruh Indonesia</h2>
+    <p class="section-desc">Data layanan dan pemesanan produk/kompetisi PT KAR secara nasional.</p>
+    <div class="image-frame"><img src="../assets/icons/jangkauan.webp" alt="logo"></div>
+    <div class="grid-3">
+      <div class="card"><div class="card-body">
+        <h3>950.000+ Pemesanan & Layanan</h3>
+        <p>Total pemesanan dan layanan yang telah dilayani PT KAR di seluruh Indonesia.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>33+ Provinsi Tujuan</h3>
+        <p>Jangkauan pemesanan produk dan layanan PT KAR telah menjangkau 33+ provinsi di Indonesia.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>Sertifikat & Piagam Teruji</h3>
+        <p>Sertifikat/piagam dari brand yang dinaungi PT KAR telah digunakan dan terbukti keabsahannya sebagai referensi pendaftaran Perguruan Tinggi Negeri di seluruh Indonesia.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Roadmap</span>
+    <h2 class="section-title">Roadmap Perusahaan 2023–2030</h2>
+    <p class="section-desc">Tahun 2023–2025 merupakan capaian yang telah dilalui, sedangkan 2026–2030 merupakan rencana strategis (proyeksi) perusahaan dan belum sepenuhnya terealisasi.</p>
+    <div class="roadmap-list">
+      <div class="roadmap-item">
+        <div class="roadmap-head"><span class="roadmap-year">2023</span><span class="roadmap-status">Tercapai</span></div>
+        <h4>Event Nasional & Komunitas Awal</h4>
+        <p>Membangun kepercayaan dan fondasi komunitas berskala nasional.</p>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-head"><span class="roadmap-year">2024</span><span class="roadmap-status">Tercapai</span></div>
+        <h4>Aplikasi Edutech Android & ios</h4>
+        <p>Aplikasi Edutech Android & ios.</p>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-head"><span class="roadmap-year">2025</span><span class="roadmap-status">Tercapai</span></div>
+        <h4>Event Nasional & Komunitas Awal</h4>
+        <p>Mengintegrasikan pembelajaran, ujian, dan kompetisi dalam satu ekosistem</p>
+      </div>
+      <div class="roadmap-item is-plan">
+        <div class="roadmap-head"><span class="roadmap-year">2026</span><span class="roadmap-status">Berjalan</span></div>
+        <h4>1 juta Member & Offline Expansion</h4>
+        <p>Memperluas dampak dari digital ke aktivitas nyata di berbagai daerah.</p>
+      </div>
+      <div class="roadmap-item is-plan">
+        <div class="roadmap-head"><span class="roadmap-year">2027</span><span class="roadmap-status">Rencana</span></div>
+        <h4>Ecosystem Consolidation & Leadership Scale</h4>
+        <p>Menguatakan integrasi brand sistem, dan kepemimpinan lapis kedua.</p>
+      </div>
+      <div class="roadmap-item is-plan">
+        <div class="roadmap-head"><span class="roadmap-year">2028</span><span class="roadmap-status">Rencana</span></div>
+        <h4>capital Readiness & Strategic Investment</h4>
+        <p>Menyiapkan struktur, tata kelola, dan pertumbuhan jangka panjang.</p>
+      </div>
+      <div class="roadmap-item is-plan">
+        <div class="roadmap-head"><span class="roadmap-year">2029</span><span class="roadmap-status">Rencana</span></div>
+        <h4>National Market Leadership</h4>
+        <p>Menjadi rujukan nasional dalam ekosistem edukasi berbasis teknologi.</p>
+      </div>
+      <div class="roadmap-item is-plan">
+        <div class="roadmap-head"><span class="roadmap-year">2030</span><span class="roadmap-status">Visi</span></div>
+        <h4>KAR - Beyond the Legacy</h4>
+        <p>Membangun sistem, manusia, dan dampak pendidikan yang hidup lintas generasi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Dokumentasi</span>
+    <h2 class="section-title">Daftar Event Terkurasi Puspresnas</h2>
+    <p class="section-desc">Event kompetisi yang telah dikurasi dan diselenggarakan brand-brand di bawah naungan PT KAR, per tahun.</p>
+    <div class="grid-3">
+      <div class="card"><div class="card-body"><span class="tag">2022</span><p>Puskanas - OSH 2022</p></div></div>
+      <div class="card"><div class="card-body"><span class="tag">2023</span><p>Puskanas - KSI-HP 2023<br>Presmanesia - OSPENAS 2023</p></div></div>
+      <div class="card"><div class="card-body"><span class="tag">2024</span><p>Gemanesia - KSSI 2024<br>Gemanesia - SSN 2024<br>Puskanas - OSSN 2024<br>Puskanas - KESAN 2024<br>Puskanas - KSNP 2024<br>Presmanesia - PESONA 2024<br>Presmanesia - PESONAS 2024</p></div></div>
+      <div class="card"><div class="card-body"><span class="tag">2025</span><p>Gemanesia - OLIMNAS 2025<br>Gemanesia - SSN 2025<br>Puskanas - OSSI 2025<br>Puskanas - KSI-HP 2025<br>Presmanesia - IOS 2025<br>Presmanesia - OSPENAS 2025<br>Sentral - KSAI 2025</p></div></div>
+      <div class="card"><div class="card-body"><span class="tag">2026</span><p>Presmanesia - OSN-AT 2026<br>Fosnas - ISO 2026<br>Presmanesia - Pesona 2026<br>Fosnas - OSAN 2026<br><em style="font-size:.75rem;color:var(--muted)">*Daftar 2026 masih bertambah, tahun berjalan.</em></p></div></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var navy = '#0d2547', gold = '#d4a017';
+
+  if (typeof Chart === 'undefined') {
+    document.querySelectorAll('.chart-wrap').forEach(function (el) {
+      el.innerHTML = '<p style="color:var(--muted);font-size:.8rem;text-align:center;padding-top:80px">Grafik gagal dimuat (koneksi ke CDN Chart.js terblokir/offline). Data lengkap tetap tersedia pada catatan di bawah grafik ini.</p>';
+    });
+    return;
+  }
+
+  // Grafik batang jumlah member per tahun.
+  // Untuk update data: ubah array "labels" (tahun) dan "data" (jumlah member,
+  // urutannya harus sama dengan urutan labels-nya).
+  var memberCtx = document.getElementById('chartMember');
+  if (memberCtx) {
+    new Chart(memberCtx, {
+      type: 'bar',
+      data: {
+        labels: ['2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Jumlah Member',
+          data: [144053, 257421, 501311, 682045],
+          backgroundColor: navy,
+          borderRadius: 6,
+          maxBarThickness: 60
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { callback: function (v) { return v.toLocaleString('id-ID'); } }
+          }
+        }
+      }
+    });
+  }
+
+  // Grafik garis peserta lulus PTN (dalam ribuan) per tahun.
+  // Sama seperti grafik member: ubah "labels" (tahun) dan "data" (angka
+  // dalam ribuan) secara berpasangan.
+  var ptnCtx = document.getElementById('chartPtn');
+  if (ptnCtx) {
+    new Chart(ptnCtx, {
+      type: 'line',
+      data: {
+        labels: ['2024', '2025', '2026*'],
+        datasets: [{
+          label: 'Peserta Lulus PTN (ribu)',
+          data: [66, 44, 39],
+          borderColor: gold,
+          backgroundColor: 'rgba(212,160,23,.15)',
+          fill: true,
+          tension: 0.35,
+          pointBackgroundColor: gold,
+          pointRadius: 5
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: 'Ribuan peserta' } } }
+      }
+    });
+  }
+});
+</script>
+
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

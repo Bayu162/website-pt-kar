@@ -1,0 +1,61 @@
+<!--
+  ============================================================================
+  CONTOH FILE ARTIKEL BERITA — dijadikan TEMPLATE untuk artikel baru.
+  Lihat pages/berita/index.html untuk panduan lengkap "cara menambah/
+  menghapus artikel". Ringkasnya, untuk membuat artikel baru: duplikat
+  file ini, lalu ubah bagian yang ditandai komentar di bawah.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Judul tab browser + judul untuk mesin pencari. Ganti sesuai artikel. -->
+<title>Kegiatan Kompetisi Akademik Nasional - Berita PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Dokumentasi penyelenggaraan kompetisi akademik yang diikuti siswa dari berbagai provinsi.">
+<link rel="icon" href="../../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Kegiatan Kompetisi Akademik Nasional">
+<meta property="og:description" content="Dokumentasi penyelenggaraan kompetisi akademik yang diikuti siswa dari berbagai provinsi.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <script src="../../assets/js/navbar.js" data-active="berita"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <!-- Judul artikel — ubah di 2 tempat: teks breadcrumb terakhir & <h1> -->
+    <div class="breadcrumb"><a href="../../index.html">Beranda</a> / <a href="index.html">Berita</a> / Kegiatan Kompetisi Akademik Nasional</div>
+    <h1>Kegiatan Kompetisi Akademik Nasional</h1>
+    <!-- Kategori & tanggal publikasi artikel -->
+    <p style="color:#c9d6e8;margin-top:8px">Kompetisi · 22 Februari 2026</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:820px">
+    <!-- Foto utama artikel. Ganti src dengan foto baru (upload ke assets/icons/
+         atau assets/images/, nama file huruf kecil tanpa spasi). -->
+    <div class="image-frame" style="margin-bottom:30px">
+      <img src="../../assets/icons/kegiatan-kompetisi.webp" alt="Kegiatan kompetisi">
+    </div>
+    <!-- Isi artikel: setiap paragraf ada di dalam tag <p> terpisah. Boleh
+         menambah/menghapus paragraf sesuai kebutuhan. -->
+    <p style="margin-bottom:16px;color:var(--text)">PT Ketiara Aliran Rezeki melalui brand PUSKANAS menyelenggarakan Kompetisi Akademik Nasional yang diikuti ribuan siswa dari berbagai provinsi di Indonesia.</p>
+    <p style="margin-bottom:16px;color:var(--text)">Kegiatan ini bertujuan mengasah kemampuan akademik siswa sekaligus membuka kesempatan berprestasi di tingkat nasional. Peserta mengikuti rangkaian babak penyisihan hingga final yang diselenggarakan secara daring dan luring.</p>
+    <p style="margin-bottom:30px;color:var(--text)">PT KAR berterima kasih kepada seluruh sekolah dan peserta yang telah berpartisipasi, serta berkomitmen menghadirkan kompetisi serupa secara berkelanjutan.</p>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <a href="index.html" class="btn btn-outline-navy">← Kembali ke Berita</a>
+      <!-- Tombol "Bagikan": data-share-title & data-share-text ditampilkan
+           saat pengguna membagikan artikel ini (WhatsApp/Facebook/dll).
+           Sesuaikan dengan judul & ringkasan artikel yang baru. -->
+      <button type="button" class="btn btn-primary share-btn" data-share-title="Kegiatan Kompetisi Akademik Nasional" data-share-text="Baca artikel Kegiatan Kompetisi Akademik Nasional di PT Ketiara Aliran Rezeki">Bagikan</button>
+    </div>
+  </div>
+</section>
+
+<script src="../../assets/js/footer.js"></script>
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>

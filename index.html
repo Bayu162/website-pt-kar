@@ -1,0 +1,250 @@
+<!--
+  ============================================================================
+  BERANDA (index.html)
+  Halaman ini adalah halaman utama yang muncul saat website dibuka.
+  Situs ini TIDAK memiliki panel admin — semua konten diedit langsung di
+  file HTML ini menggunakan text editor (contoh: Notepad++, VS Code, Sublime).
+
+  Lihat PANDUAN-PENGEDITAN.docx (atau README.md) di folder utama untuk
+  panduan lengkap langkah-demi-langkah sebelum mengedit apa pun di sini.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Ketiara Aliran Rezeki | Ekosistem Teknologi Pendidikan Indonesia</title>
+<meta name="description" content="PT Ketiara Aliran Rezeki (PT KAR) mengembangkan ekosistem teknologi pendidikan melalui kompetisi akademik, media, pembelajaran, dan layanan pendukung pendidikan berskala nasional.">
+<link rel="icon" href="assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Membangun ekosistem teknologi pendidikan untuk generasi Indonesia.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <script src="assets/js/navbar.js" data-active="index"></script>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--gold-light)">Ekosistem Teknologi Pendidikan Indonesia</span>
+      <h1>Membangun Ekosistem Teknologi Pendidikan untuk Generasi Indonesia</h1>
+      <p>PT Ketiara Aliran Rezeki mengembangkan ekosistem pendidikan melalui teknologi, kompetisi akademik, media, pembelajaran, dan layanan pendukung pendidikan berskala nasional.</p>
+      <div class="hero-actions">
+        <a href="" class="btn btn-primary">Kenali PT KAR</a>
+        <a href="pages/ekosistem.html" class="btn btn-outline">Lihat Ekosistem Kami</a>
+      </div>
+    </div>
+    <!--
+      GALERI FOTO SLIDESHOW (bergerak otomatis, diatur oleh assets/js/script.js)
+      Cara mengganti foto di sini:
+      1. Simpan foto baru ke folder assets/images/ (atau assets/icons/ jika berupa foto kegiatan).
+         PENTING: beri nama file huruf kecil semua & tanpa spasi, contoh: kegiatan-rapat-2026.webp
+      2. Ganti nilai src="..." pada tag <img> di bawah ini dengan nama file foto baru.
+      3. Ganti juga teks alt="..." (deskripsi singkat foto, untuk aksesibilitas & SEO).
+      4. Jumlah slide boleh ditambah/dikurangi: tinggal salin/hapus 1 blok
+         <div class="career-slide">...</div> secara utuh.
+      Catatan: dulu foto hero diatur lewat CSS ".hero-visual", tapi sekarang
+      sudah tidak dipakai — foto hero DIGANTI di sini, bukan lewat style.css.
+    -->
+    <div class="career-slideshow" id="karierSlideshow" role="region" aria-label="Galeri foto kegiatan karyawan" aria-roledescription="carousel">
+      <div class="career-slide active"><img src="assets/icons/Teknologi_pendidikan1.webp" alt="Kegiatan tim PT KAR" loading="lazy">
+        <span class="career-slide-caption"></span>
+      </div>
+
+      <div class="career-slide"><img src="assets/icons/Teknologi_pendidikan2.webp" alt="Suasana kantor PT KAR" loading="lazy">
+        <span class="career-slide-caption"></span>
+      </div>
+
+      <div class="career-slide"><img src="assets/icons/Teknologi_pendidikan3.webp" alt="Kolaborasi proyek di PT KAR" loading="lazy">
+        <span class="career-slide-caption"></span>
+      </div>
+
+      <div class="career-slide"><img src="assets/icons/Teknologi_pendidikan4.webp" alt="Acara perusahaan PT KAR" loading="lazy">
+        <span class="career-slide-caption"></span>
+      </div>
+
+      <div class="career-slide"><img src="assets/icons/Teknologi_pendidikan5.webp" alt="Budaya kerja PT KAR" loading="lazy">
+        <span class="career-slide-caption"></span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section" id="tentang">
+  <div class="container">
+    <span class="eyebrow">Ringkasan Perusahaan</span>
+    <h2 class="section-title">Siapa PT Ketiara Aliran Rezeki</h2>
+    <p style="max-width:760px;color:var(--muted)">
+      PT Ketiara Aliran Rezeki (PT KAR) adalah perusahaan teknologi pendidikan yang mengelola berbagai brand dan program
+      di bidang kompetisi akademik, pembelajaran berbasis teknologi, media pendidikan, percetakan, dan kegiatan sosial.
+      Kami hadir untuk mendampingi siswa, sekolah, dan mitra pendidikan dalam membangun ekosistem belajar yang
+      berkualitas dan berkelanjutan di seluruh Indonesia.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <span class="eyebrow">Statistik</span>
+    <h2 class="section-title">Perkembangan dalam Angka</h2>
+    <p class="section-desc">Ringkasan capaian utama PT Ketiara Aliran Rezeki berdasarkan data resmi perusahaan.</p>
+
+    <!--
+      STATISTIK / ANGKA PENCAPAIAN
+      Angka pada atribut data-count="..." ini otomatis "berhitung naik" dari 0
+      saat pengunjung scroll sampai ke sini (efek dijalankan oleh script.js,
+      fungsi animateCounters — TIDAK PERLU diubah, cukup ubah angkanya saja).
+
+      Cara mengubah angka:
+      - Ganti angka di data-count="..." (isi HANYA angka, tanpa titik/koma).
+      - Ganti teks di .achieve-label (nama statistik) dan .achieve-period
+        (periode/keterangan data) sesuai kebutuhan.
+      - PENTING: blok statistik yang SAMA juga muncul di pages/capaian.html.
+        Ubah angkanya di KEDUA tempat supaya datanya konsisten.
+      - Pastikan angka baru sudah disetujui pembimbing/atasan sebelum publish.
+    -->
+    <div class="achieve-band">
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="682045" data-suffix="+">0</div>
+        <div class="achieve-label">Member Terdaftar</div>
+        <div class="achieve-period">Per Desember 2025</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="950000" data-suffix="+">0</div>
+        <div class="achieve-label">Pemesanan & Layanan</div>
+        <div class="achieve-period">Seluruh Indonesia</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="33" data-suffix="+">0</div>
+        <div class="achieve-label">Provinsi Tujuan Pemesanan</div>
+        <div class="achieve-period">Jangkauan Nasional</div>
+      </div>
+      <div class="achieve-item">
+        <div class="achieve-num" data-count="39000" data-suffix="+">0</div>
+        <div class="achieve-label">Peserta Lulus PTN</div>
+        <div class="achieve-period">Tahun 2026 (berjalan)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ekosistem">
+  <div class="container">
+    <span class="eyebrow">Ekosistem Brand</span>
+    <h2 class="section-title">Brand yang Kami Kelola</h2>
+    <p class="section-desc">PT KAR menaungi berbagai brand yang bergerak di bidang kompetisi, teknologi pembelajaran, media, dan sosial.</p>
+    <!--
+      CATATAN: Ini hanya 3 brand UNGGULAN yang ditampilkan di Beranda (bukan
+      daftar lengkap). Daftar LENGKAP semua brand ada di pages/ekosistem.html.
+      Untuk MENAMBAH BRAND BARU secara resmi, tambahkan di pages/ekosistem.html
+      (lihat komentar di file tersebut). Menambah kartu di sini bersifat
+      opsional, hanya untuk menonjolkan brand tertentu di halaman utama.
+    -->
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-logo"><img src="assets/icons/puskanas.webp" alt="Logo PUSKANAS"></div>
+          <span class="tag">Kompetisi & Prestasi</span>
+          <h3>PUSKANAS</h3>
+          <p>Pusat kompetisi akademik nasional untuk siswa di seluruh Indonesia.</p>
+          <a href="pages/ekosistem.html" class="card-link">Lihat selengkapnya →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-logo"><img src="assets/icons/smartpuska.webp" alt="Logo SmartPuska"></div>
+          <span class="tag">Teknologi & Pembelajaran</span>
+          <h3>SmartPuska</h3>
+          <p>Platform pembelajaran berbasis teknologi untuk mendukung persiapan kompetisi.</p>
+          <a href="pages/ekosistem.html" class="card-link">Lihat selengkapnya →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-logo"><img src="assets/icons/sentral-olimpiade.webp" alt="Logo Eventindo.co"></div>
+          <span class="tag">Kompetisi & Prestasi</span>
+          <h3>Sentral Olimpiade</h3>
+          <p>Pusat penyelenggaraan olimpiade akademik.</p>
+          <a href="pages/ekosistem.html" class="card-link">Lihat selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="capaian">
+  <div class="container">
+    <span class="eyebrow">Capaian</span>
+    <h2 class="section-title">Perjalanan PT KAR</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <h4>Perluasan jangkauan ke 34 provinsi</h4>
+        <p>Program kompetisi dan pembelajaran menjangkau lebih banyak sekolah di seluruh Indonesia.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <h4>Peluncuran unit teknologi pembelajaran</h4>
+        <p>SmartPuska diluncurkan sebagai platform pendukung persiapan kompetisi berbasis teknologi.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <h4>Pendirian PT Ketiara Aliran Rezeki</h4>
+        <p>Dimulai dari unit kompetisi akademik, berkembang menjadi ekosistem pendidikan.</p>
+      </div>
+    </div>
+    <div style="margin-top:26px"><a href="pages/capaian.html" class="btn btn-outline-navy">Lihat Semua Capaian</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Mitra Kami</span>
+    <h2 class="section-title">Mitra yang kami kelola</h2>
+    <p class="section-desc">Bersama PT KAR, kami membuka jalan baru untuk pertumbuhan bisnis Anda melalui ekosistem yang saling menguntungkan dan inovasi berkelanjutan.</p>
+    <div class="mitra-marquee">
+      <div class="mitra-marquee-track">
+        <div class="mitra-logo"><img src="assets/icons/J&T_Express_logo.svg.webp" alt="Logo J&T" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/Logo_JNE.png" alt="Logo JNE" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-multi-souvenir.webp" alt="Logo Multi Souvenir" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-pt-multi-karya.webp" alt="Logo Multi Karya" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-busana-aksara.webp" alt="Logo Busana Aksara" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-alyone-shop.webp" alt="Logo Alyone Shop" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-alyone-daily.webp" alt="Logo Alyone Daily" loading="lazy"></div>
+        <div class="mitra-logo"><img src="assets/icons/logo-daffa-kreatif.webp" alt="Logo Daffa Kreatif" loading="lazy"></div>
+        <!-- duplikat agar loop mulus -->
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/J&T_Express_logo.svg.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/Logo_JNE.png" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-multi-souvenir.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-pt-multi-karya.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-busana-aksara.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-alyone-shop.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-alyone-daily.webp" alt="" loading="lazy"></div>
+        <div class="mitra-logo" aria-hidden="true"><img src="assets/icons/logo-daffa-kreatif.webp" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta">
+      <h2>Mari Membangun Masa Depan Pendidikan Indonesia Bersama</h2>
+      <p>Terbuka untuk kolaborasi dengan sekolah, perguruan tinggi, perusahaan, dan instansi pemerintah.</p>
+      <div class="cta-actions">
+        <a href="pages/mitra.html" class="btn btn-primary">Jalin Kerja Sama</a>
+        <a href="pages/kontak.html" class="btn btn-outline">Hubungi Kami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

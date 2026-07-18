@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak - PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Hubungi PT Ketiara Aliran Rezeki melalui WhatsApp, email, atau kunjungi kantor kami.">
+<link rel="icon" href="../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Kontak - PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Hubungi PT Ketiara Aliran Rezeki melalui WhatsApp, email, atau kunjungi kantor kami.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <script src="../assets/js/navbar.js" data-active="kontak"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Beranda</a> / Kontak</div>
+    <h1>Hubungi Kami</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Informasi Kontak</span>
+      <h2 class="section-title">PT Ketiara Aliran Rezeki</h2>
+      <!-- Alamat kantor. Ganti teks di dalam <span> jika kantor pindah. -->
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-brands fa-periscope"></i></div><div><strong>Alamat</strong><br><span style="color:var(--muted)">Jl. Taman Setia Budi Indah Blok A No. 49C, Medan</span></div></div>
+      <!--
+        NOMOR TELEPON/WHATSAPP UTAMA (yang tampil sebagai teks biasa di sini).
+        PENTING — nomor ini HANYA teks tampilan, bukan tautan aktif.
+        Nomor WhatsApp AKTIF (tombol chat WA melayang, footer, & halaman
+        Karier) diatur TERPISAH di assets/js/footer.js dan pages/karier.html.
+        Jika mengganti nomor WhatsApp resmi perusahaan, ubah di SEMUA tempat
+        berikut agar konsisten (lihat PANDUAN-PENGEDITAN.docx bagian
+        "Cara Mengganti Nomor WhatsApp"):
+          1. Teks di bawah ini (format +62 xxx-xxxx-xxxx)
+          2. assets/js/footer.js (tombol WA melayang di semua halaman)
+          3. pages/karier.html (3 tautan "Lamar via WhatsApp")
+          4. assets/js/script.js (nomor untuk form kontak di bawah halaman ini)
+      -->
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-phone"></i></div><div><strong>Telepon / WhatsApp</strong><br><span style="color:var(--muted)">+62 852-6984-0834</span></div></div>
+      <!--
+        EMAIL UMUM PERUSAHAAN — dipakai untuk komunikasi umum (bukan HR).
+        Muncul juga di: footer.js, pages/kebijakan-privasi.html, pages/mitra.html.
+        Ganti "info@ketiara.id" di SEMUA file tersebut jika email berubah.
+        (Email khusus lamaran kerja/HR ada terpisah, lihat pages/karier.html.)
+      -->
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><br><a href="mailto:info@ketiara.id" style="color:var(--muted)">info@ketiara.id</a></div></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-clock"></i></div><div><strong>Jam Operasional</strong><br><span style="color:var(--muted)">Senin–Sabtu, 09.00–17.00 WIB</span></div></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-link"></i></div><div><strong>Media Sosial</strong><br><span style="color:var(--muted)">Instagram</span></div></div>
+      <a href="mitra.html" class="btn btn-primary">Jalin Kerja Sama</a>
+    </div>
+
+    <div>
+      <!--
+        FORM KIRIM PESAN VIA WHATSAPP
+        Saat pengguna mengisi form ini dan menekan "Kirim via WhatsApp",
+        JavaScript (assets/js/script.js, cari "waForm") akan membuka
+        WhatsApp dengan nomor tujuan yang ditulis di file tersebut
+        (variabel "nomor"), BUKAN nomor yang tertulis di atas sebagai teks.
+        Jika mengganti nomor WhatsApp perusahaan, jangan lupa ubah juga
+        nomor di assets/js/script.js supaya form ini mengirim ke nomor
+        yang benar.
+      -->
+      <span class="eyebrow">Kirim Pesan via WhatsApp</span>
+      <h2 class="section-title">Formulir Cepat</h2>
+      <form id="wa-form">
+        <div class="form-group"><label for="wa-nama">Nama</label><input type="text" id="wa-nama" required></div>
+        <div class="form-group"><label for="wa-pesan">Pesan</label><textarea id="wa-pesan" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn-primary">Kirim via WhatsApp</button>
+      </form>
+      </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <!--
+      PETA LOKASI (Google Maps Embed)
+      Cara mengganti lokasi:
+      1. Buka Google Maps, cari alamat kantor yang benar.
+      2. Klik "Bagikan" -> "Sematkan peta" (Embed a map) -> salin kode HTML
+         yang diberikan Google (berupa tag <iframe ...>).
+      3. Ganti seluruh tag <iframe> di bawah ini dengan kode baru dari Google.
+    -->
+    <span class="eyebrow">Lokasi</span>
+    <h2 class="section-title">Peta Lokasi Kantor</h2>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.01152847520024!2d98.6399253841887!3d3.5707773804803424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fc876f3c2c3%3A0x278f4f6640f69b48!2sRIZHAQI%20LAUNDRY!5e1!3m2!1sid!2sid!4v1784090551232!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>    </div>
+  </div>
+</section>
+
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

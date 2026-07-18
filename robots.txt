@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ketiara.id/sitemap.xml

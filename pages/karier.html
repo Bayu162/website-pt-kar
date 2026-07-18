@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karier - PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Informasi karier, budaya kerja, dan lowongan di PT Ketiara Aliran Rezeki.">
+<link rel="icon" href="../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Karier - PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Informasi karier, budaya kerja, dan lowongan di PT Ketiara Aliran Rezeki.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <script src="../assets/js/navbar.js" data-active="karier"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Beranda</a> / Karier</div>
+    <h1>Karier di PT KAR</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div>
+      <span class="eyebrow">Budaya Kerja</span>
+      <h2 class="section-title">Tumbuh Bersama PT KAR</h2>
+      <p style="color:var(--muted)">Kami membangun lingkungan kerja yang kolaboratif, terbuka terhadap ide baru, dan berorientasi pada dampak nyata bagi dunia pendidikan Indonesia. Nilai integritas, inovasi, dan keunggulan menjadi landasan setiap pekerjaan yang kami lakukan.</p>
+
+      <div class="value-badges" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+        <span class="tag"><i class="fa-solid fa-handshake" style="margin-right:6px;color:var(--gold)"></i>Integritas</span>
+        <span class="tag"><i class="fa-solid fa-lightbulb" style="margin-right:6px;color:var(--gold)"></i>Inovasi</span>
+        <span class="tag"><i class="fa-solid fa-star" style="margin-right:6px;color:var(--gold)"></i>Keunggulan</span>
+        <span class="tag"><i class="fa-solid fa-people-group" style="margin-right:6px;color:var(--gold)"></i>Kolaborasi</span>
+      </div>
+
+      <p style="color:var(--muted);margin-top:20px"><strong style="color:var(--navy)">Lingkungan Kerja:</strong> Karyawan bekerja dalam tim yang saling mendukung dengan komunikasi terbuka antar divisi, didukung jam kerja yang jelas, ruang untuk berkembang, serta berbagai kegiatan kebersamaan seperti senam pagi, family gathering, dan pengajian rutin untuk menjaga keseimbangan kerja dan kehidupan pribadi.</p>
+    </div>
+    <div class="career-slideshow" id="karierSlideshow" role="region" aria-label="Galeri foto kegiatan karyawan" aria-roledescription="carousel">
+      <div class="career-slide active"><img src="../assets/icons/kegiatan-csr.webp" alt="Kegiatan tim PT KAR" loading="lazy"><span class="career-slide-caption">Kegiatan CSR PT KAR bersama masyarakat sekitar</span></div>
+      <div class="career-slide"><img src="../assets/icons/kegiatan-family-gathering.webp" alt="Suasana kantor PT KAR" loading="lazy"><span class="career-slide-caption">Family Gathering, mempererat kebersamaan tim</span></div>
+      <div class="career-slide"><img src="../assets/icons/kegiatan-pengajian.webp" alt="Kolaborasi proyek di PT KAR" loading="lazy"><span class="career-slide-caption">Pengajian rutin, memperkuat nilai spiritual bersama</span></div>
+      <div class="career-slide"><img src="../assets/icons/kegiatan-rapat-kerja.webp" alt="Acara perusahaan PT KAR" loading="lazy"><span class="career-slide-caption">Rapat kerja, menyusun strategi dan target perusahaan</span></div>
+      <div class="career-slide"><img src="../assets/icons/kegiatan-senam.webp" alt="Budaya kerja PT KAR" loading="lazy"><span class="career-slide-caption">Senam pagi bersama, menjaga kebugaran dan semangat tim</span></div>
+      <button type="button" class="career-slideshow-arrow prev" aria-label="Foto sebelumnya">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="career-slideshow-arrow next" aria-label="Foto berikutnya">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <div class="career-slideshow-dots" role="tablist" aria-label="Pilih slide">
+        <button type="button" class="dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
+        <button type="button" class="dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
+        <button type="button" class="dot" role="tab" aria-selected="false" aria-label="Slide 3" data-index="2"></button>
+        <button type="button" class="dot" role="tab" aria-selected="false" aria-label="Slide 4" data-index="3"></button>
+        <button type="button" class="dot" role="tab" aria-selected="false" aria-label="Slide 5" data-index="4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Lowongan</span>
+    <h2 class="section-title">Posisi yang Tersedia</h2>
+    <p class="section-desc">Berikut posisi yang sedang kami buka. Lamaran dapat dikirimkan melalui saluran yang tertera pada masing-masing posisi.</p>
+
+    <!--
+      DAFTAR LOWONGAN (.job-card)
+      ============================================================
+      EMAIL HR: hrdketiaraaliranrezeki@gmail.com — INI BERBEDA dari email
+      umum perusahaan (info@ketiara.id) yang dipakai di halaman lain. Email
+      ini KHUSUS untuk lamaran kerja, muncul di 4 tempat pada halaman ini
+      (3 kartu lowongan + 1 tombol "Kirim Lamaran Umum" di bawah). Ganti di
+      SEMUA tempat itu jika email HR berubah.
+
+      NOMOR WHATSAPP LAMARAN: 6285269840834 — nomor ini SAMA dengan nomor
+      WA tombol melayang & footer (lihat assets/js/footer.js), BUKAN nomor
+      yang dipakai form kontak di pages/kontak.html.
+
+      CARA MENAMBAH LOWONGAN BARU:
+      Salin satu blok <div class="card job-card">...</div>, ubah gambar,
+      kategori (<span class="tag">), judul posisi (<h3>), deskripsi (<p>),
+      dan link email/WhatsApp jika perlu.
+
+      CARA MENUTUP/MENGHAPUS LOWONGAN:
+      - Untuk menandai "Ditutup" tapi tetap ditampilkan: tambahkan class
+        "job-card--closed" pada <div class="card ..."> dan tambahkan
+        <span class="job-status-closed">Lowongan Ditutup</span> (contoh:
+        lihat 2 kartu di bawah yang sudah berstatus tertutup).
+      - Untuk menghapus total dari halaman: hapus saja blok kartunya.
+      ============================================================
+    -->
+    <div class="grid-3">
+      <div class="card job-card">
+        <div class="job-card-image"><img src="../assets/icons/lowongan_1.webp" alt="lowongan"></div>
+        <div class="card-body">
+          <span class="tag">Kompetisi & Edukasi</span>
+          <h3>Content Writer &amp; Media Sosial</h3>
+          <p>Menyusun konten edukatif dan mengelola media sosial brand-brand di bawah PT KAR, termasuk PUSKANAS dan Gemanesia.</p>
+          <div class="job-card-actions">
+            <a href="mailto:hrdketiaraaliranrezeki@gmail.com?subject=..." class="btn btn-outline-navy">Lamar via Email</a>
+            <a href="https://wa.me/6285269840834?text=..." target="_blank" rel="noopener" class="btn btn-outline-navy">Lamar via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card job-card--closed">
+        <div class="job-card-image"><img src="../assets/icons/lowongan_1.webp" alt="lowongan"></div>
+        <div class="card-body">
+          <span class="tag">Digital Marketing</span>
+          <span class="job-status-closed">Lowongan Ditutup</span>
+          <h3>Digital Marketing spesialis</h3>
+          <p>Lowongan dibuka untuk anda yang mahir dalam permarketing secara online.</p>
+          <div class="job-card-actions">
+            <a href="mailto:hrdketiaraaliranrezeki@gmail.com?subject=..." class="btn btn-outline-navy">Lamar via Email</a>
+            <a href="https://wa.me/6285269840834?text=..." target="_blank" rel="noopener" class="btn btn-outline-navy">Lamar via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card job-card job-card--closed">
+        <div class="job-card-image"><img src="../assets/icons/lowongan_2.webp" alt="lowongan"></div>
+        <div class="card-body">
+          <span class="tag">Praktik Kerja Lapangan</span>
+          <span class="job-status-closed">Lowongan Ditutup</span>
+          <h3>PKL</h3>
+          <p>Lamaran untuk anak SMK yang sedang mencari tempat PKL</p>
+          <div class="job-card-actions">
+            <a href="mailto:hrdketiaraaliranrezeki@gmail.com?subject=..." class="btn btn-outline-navy">Lamar via Email</a>
+            <a href="https://wa.me/6285269840834?text=..." target="_blank" rel="noopener" class="btn btn-outline-navy">Lamar via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px">
+      <a href="mailto:hrdketiaraaliranrezeki@gmail.com" class="btn btn-primary">Kirim Lamaran Umum via Email</a>
+    </div>
+  </div>
+</section>
+
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SITEMAP.XML — daftar semua halaman website, dipakai mesin pencari
+  (Google, dsb.) untuk mengetahui halaman apa saja yang perlu diindeks.
+
+  PENTING: setiap kali menambah/menghapus ARTIKEL BERITA atau HALAMAN BARU,
+  file ini WAJIB diperbarui juga:
+  - Menambah artikel/halaman baru -> tambahkan 1 baris <url><loc>...</loc></url>
+    baru dengan URL lengkap halaman tersebut.
+  - Menghapus artikel/halaman -> hapus baris <url> yang sesuai.
+  Jika tidak diperbarui, website tetap berfungsi normal, tapi halaman baru
+  bisa lebih lambat/tidak muncul di hasil pencarian Google.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ketiara.id/</loc><priority>1.0</priority></url>
+  <url><loc>https://ketiara.id/pages/tentang.html</loc></url>
+  <url><loc>https://ketiara.id/pages/ekosistem.html</loc></url>
+  <url><loc>https://ketiara.id/pages/capaian.html</loc></url>
+  <url><loc>https://ketiara.id/pages/mitra.html</loc></url>
+  <url><loc>https://ketiara.id/pages/legalitas.html</loc></url>
+  <url><loc>https://ketiara.id/pages/berita/index.html</loc></url>
+  <url><loc>https://ketiara.id/pages/berita/profil-dan-perkembangan.html</loc></url>
+  <url><loc>https://ketiara.id/pages/berita/kegiatan-kompetisi.html</loc></url>
+  <url><loc>https://ketiara.id/pages/berita/kegiatan-sosial.html</loc></url>
+  <url><loc>https://ketiara.id/pages/karier.html</loc></url>
+  <url><loc>https://ketiara.id/pages/kontak.html</loc></url>
+  <url><loc>https://ketiara.id/pages/kebijakan-privasi.html</loc></url>
+</urlset>

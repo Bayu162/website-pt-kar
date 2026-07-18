@@ -1,0 +1,174 @@
+<!--
+  ============================================================================
+  HALAMAN EKOSISTEM (pages/ekosistem.html)
+  Berisi daftar LENGKAP semua brand yang dinaungi PT KAR.
+  Panduan lengkap "Cara Menambahkan Brand" ada di PANDUAN-PENGEDITAN.docx.
+  Ringkasan cepat ada di komentar tepat sebelum daftar kartu brand di bawah.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekosistem Brand - PT Ketiara Aliran Rezeki</title>
+<meta name="description" content="Brand dan unit usaha PT Ketiara Aliran Rezeki di bidang kompetisi, teknologi pembelajaran, media, percetakan, dan sosial.">
+<link rel="icon" href="../assets/icons/logo-pt-kar.png" type="image/png">
+<meta property="og:title" content="Ekosistem Brand - PT Ketiara Aliran Rezeki">
+<meta property="og:description" content="Brand dan unit usaha PT Ketiara Aliran Rezeki di bidang kompetisi, teknologi pembelajaran, media, percetakan, dan sosial.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <script src="../assets/js/navbar.js" data-active="ekosistem"></script>
+  
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Beranda</a> / Ekosistem</div>
+    <h1>Ekosistem Brand PT KAR</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!--
+      TOMBOL FILTER KATEGORI
+      Tombol ini menyaring kartu brand di bawah berdasarkan data-filter="...".
+      Nilai data-filter HARUS SAMA PERSIS dengan data-category pada kartu
+      brand (.brand-item) yang ingin ditampilkan tombol ini.
+
+      Jika menambahkan KATEGORI BARU (misalnya "media" atau "sosial"):
+      1. Salin 1 baris <button> di bawah ini.
+      2. Ganti data-filter="kategori-baru" dan ganti teksnya.
+      3. Pastikan kartu brand terkait memakai data-category="kategori-baru"
+         yang sama persis (huruf kecil, tanpa spasi).
+      Filter ini otomatis berjalan lewat script.js (fungsi initFilter),
+      TIDAK PERLU mengubah file JS.
+    -->
+    <div class="filter-bar">
+      <button class="filter-btn active filter-brand" data-filter="all">Semua</button>
+      <button class="filter-btn filter-brand" data-filter="kompetisi">Kompetisi & Prestasi</button>
+      <button class="filter-btn filter-brand" data-filter="teknologi">Teknologi & Pembelajaran</button>
+      
+    </div>
+
+    <!--
+      DAFTAR KARTU BRAND (.brand-item)
+      ============================================================
+      CARA MENAMBAH BRAND BARU:
+      1. Salin (copy-paste) SATU blok <div class="card brand-item">...</div>
+         secara utuh (dari "<div class="card brand-item"" sampai penutup
+         "</div></div>" di baris paling akhir bloknya).
+      2. Tempel (paste) blok salinan tadi di bagian kategori yang sesuai.
+      3. Ubah bagian berikut sesuai brand baru:
+         - data-category="..."   -> kategori brand (harus cocok dgn tombol filter)
+         - src="../assets/icons/NAMA-LOGO.webp" -> logo brand (upload dulu logonya
+           ke folder assets/icons/, nama file huruf kecil & tanpa spasi)
+         - alt="Logo NAMA BRAND"  -> teks alternatif logo
+         - <span class="tag">    -> nama kategori yang tampil di kartu
+         - <h3>NAMA BRAND</h3>   -> nama brand
+         - <p>...</p>            -> deskripsi singkat brand
+         - href pada 3 tautan (.visit-link--site / --wa / --ig) -> ganti dengan
+           link situs resmi, nomor WhatsApp (format wa.me/62xxxxxxxxxx),
+           dan akun Instagram brand tersebut.
+         - Jika salah satu tautan BELUM ADA (situs/WA/IG belum tersedia),
+           isi href="#" saja — sistem otomatis menampilkan pesan
+           "masih belum tersedia" saat tombol itu diklik (lihat script.js,
+           bagian initComingSoonLinks).
+
+      CARA MENGHAPUS BRAND:
+      Hapus saja satu blok <div class="card brand-item">...</div> yang
+      bersangkutan, dari tag pembuka sampai tag penutupnya.
+      ============================================================
+    -->
+    <div class="grid-3">
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/puskanas.webp" alt="Logo PUSKANAS"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>PUSKANAS</h3><p>Pusat kompetisi akademik nasional untuk siswa se-Indonesia.</p>
+        <div class="visit-links">
+          <a href="https://app.puskanas.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web PUSKANAS" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281225000794" class="visit-link visit-link--wa" aria-label="Hubungi PUSKANAS via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/puskanas/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram PUSKANAS" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/presmanesia.webp" alt="Logo Presmanesia"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>Presmanesia</h3><p>Program kompetisi presentasi dan penalaran akademik.</p>
+        <div class="visit-links">
+          <a href="https://app.puskanas.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web Presmanesia" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281326004800" class="visit-link visit-link--wa" aria-label="Hubungi Presmanesia via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/presmanesia/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Presmanesia" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/gemanesia.webp" alt="Logo Gemanesia"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>Gemanesia</h3><p>Ajang kompetisi akademik tingkat nasional.</p>
+        <div class="visit-links">
+          <a href="https://app.puskanas.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web Gemanesia" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6282180007100" class="visit-link visit-link--wa" aria-label="Hubungi Gemanesia via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/gemanesia.id/?hl=id" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Gemanesia" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/fosnas.webp" alt="Logo Fosnas"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>Fosnas</h3><p>Forum olimpiade sains nasional untuk pelajar.</p>
+        <div class="visit-links">
+          <a href="https://app.puskanas.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web Fosnas" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281353000054" class="visit-link visit-link--wa" aria-label="Hubungi Fosnas via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/fosnas.id/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Fosnas" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/sentral-olimpiade.webp" alt="Logo Sentral Olimpiade"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>Sentral Olimpiade</h3><p>Pusat penyelenggaraan olimpiade akademik.</p>
+        <div class="visit-links">
+          <a href="https://sentralolimpiade.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web Sentral Olimpiade" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281353000052" class="visit-link visit-link--wa" aria-label="Hubungi Sentral Olimpiade via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/sentralolimpiade/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Sentral Olimpiade" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="kompetisi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/lon.webp" alt="Logo Lembaga Olimpiade Nasional"></div><span class="tag">Kompetisi & Prestasi</span>
+        <h3>Lembaga Olimpiade Nasional</h3><p>Lembaga pengelola program olimpiade berskala nasional.</p>
+        <div class="visit-links">
+          <a href="https://sentralolimpiade.id/" class="visit-link visit-link--site" aria-label="Kunjungi situs web Lembaga Olimpiade Nasional" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281388882373" class="visit-link visit-link--wa" aria-label="Hubungi Lembaga Olimpiade Nasional via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/lembagaolimpiadenasional/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Lembaga Olimpiade Nasional" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+
+      <div class="card brand-item" data-category="teknologi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/smartpuska.webp" alt="Logo SmartPuska"></div><span class="tag">Teknologi & Pembelajaran</span>
+        <h3>SmartPuska</h3><p>Platform pembelajaran berbasis teknologi untuk persiapan kompetisi.</p>
+        <div class="visit-links">
+          <a href="https://play.google.com/store/apps/details?id=id.smartpuska.apps&hl=id" class="visit-link visit-link--site" aria-label="Kunjungi situs web SmartPuska" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281389000908" class="visit-link visit-link--wa" aria-label="Hubungi SmartPuska via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/smartpuska/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram SmartPuska" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="teknologi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/muda-sains-nasional.webp" alt="Logo Muda Sains Nasional"></div><span class="tag">Teknologi & Pembelajaran</span>
+        <h3>Muda Sains Nasional</h3><p>Program pembelajaran sains berbasis teknologi untuk pelajar.</p>
+        <div class="visit-links">
+          <a href="https://sentralolimpiade.com/KSMB2026" class="visit-link visit-link--site" aria-label="Kunjungi situs web Muda Sains Nasional" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281225000389" class="visit-link visit-link--wa" aria-label="Hubungi Muda Sains Nasional via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/mudasainsnasional/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Muda Sains Nasional" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+      <div class="card brand-item" data-category="teknologi"><div class="card-body">
+        <div class="card-logo"><img src="../assets/icons/yaspresnas.webp" alt="Logo yaspresnas"></div><span class="tag">Teknologi & Pembelajaran</span>
+        <h3>Yaspresnas</h3><p>Platform visual presentasi untuk mendukung kompetisi akademik.</p>
+        <div class="visit-links">
+          <a href="https://sentralolimpiade.com/ESC2026" class="visit-link visit-link--site" aria-label="Kunjungi situs web Vispresnas" title="Situs Web"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://wa.me/6281388881450" class="visit-link visit-link--wa" aria-label="Hubungi Vispresnas via WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/yaspresnas/" class="visit-link visit-link--ig" aria-label="Kunjungi Instagram Vispresnas" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
