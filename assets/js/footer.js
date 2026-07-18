@@ -43,7 +43,6 @@
             '<h5>Perusahaan</h5>' +
             '<ul>' +
               '<li><a href="' + base + 'pages/mitra.html">Mitra & Kerja Sama</a></li>' +
-              '<li><a href="' + base + 'pages/legalitas.html">Legalitas</a></li>' +
               '<li><a href="' + base + 'pages/karier.html">Karier</a></li>' +
             '</ul>' +
           '</div>' +
